@@ -49,10 +49,16 @@ public class Kinematic {
     }
 
     public void update(KinematicOutput kinematicOutput, double time){
-       this.position = this.position.add(  this.velocity.mul(time).add( kinematicOutput.getLinear().mul( 0.5 * Math.pow(time, 2) ) ) );
-       this.orientation += this.rotaion * time + kinematicOutput.getAngular() * 0.5 * Math.pow(time, 2);
-       this.velocity = this.velocity.add(kinematicOutput.getLinear().mul(time));
-       this.rotaion += kinematicOutput.getAngular() * time;
+        this.position = this.position.add(  this.velocity.mul(time).add( kinematicOutput.getLinear().mul( 0.5 * Math.pow(time, 2) ) ) );
+        this.orientation += this.rotaion * time + kinematicOutput.getAngular() * 0.5 * Math.pow(time, 2);
+        this.velocity = this.velocity.add(kinematicOutput.getLinear().mul(time));
+        this.rotaion += kinematicOutput.getAngular() * time;
     }
 
+    public double getNewOrientation(double currentOrientation, Vector2D currentVelocity){
+        if(currentVelocity.lenght() > 0){
+            return Math.atan2( - currentVelocity.getX(), currentVelocity.getY());
+        }
+        return currentOrientation;
+    }
 }

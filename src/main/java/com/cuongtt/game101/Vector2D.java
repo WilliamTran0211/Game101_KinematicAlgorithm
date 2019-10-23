@@ -113,4 +113,7 @@ public class Vector2D {
         return new Vector2D(v.getX() / lenghtSquared, v.getY() / lenghtSquared );
     }
 
+    public double lenght(){
+        return Math.sqrt( Math.pow(this.x, 2) + Math.pow(this.y, 2));
+    }
 }

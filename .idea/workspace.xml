@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="637cf518-c120-4628-bcd0-a454c6407b8e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cuongtt/game101/Kinematic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cuongtt/game101/Kinematic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cuongtt/game101/KinematicSeek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cuongtt/game101/KinematicSeek.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cuongtt/game101/Vector2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cuongtt/game101/Vector2D.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cuongtt/game101/Vector2D.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="85" column="20" lean-forward="true" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
+            <state relative-caret-position="191">
+              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
               <folding>
                 <element signature="e#244#245#0" expanded="true" />
                 <element signature="e#268#269#0" expanded="true" />
@@ -34,6 +32,8 @@
                 <element signature="e#380#381#0" expanded="true" />
                 <element signature="e#414#415#0" expanded="true" />
                 <element signature="e#440#441#0" expanded="true" />
+                <element signature="e#2751#2752#0" expanded="true" />
+                <element signature="e#2777#2778#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -42,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cuongtt/game101/Kinematic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="54" column="59" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
+            <state relative-caret-position="541">
+              <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
               <folding>
                 <element signature="e#486#487#0" expanded="true" />
                 <element signature="e#517#518#0" expanded="true" />
@@ -138,7 +138,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
@@ -284,7 +284,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571811292741</updated>
       <workItem from="1571811296484" duration="4819000" />
-      <workItem from="1571816659544" duration="2581000" />
+      <workItem from="1571816659544" duration="3322000" />
     </task>
     <servers />
   </component>
@@ -303,7 +303,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7400000" />
+    <option name="totallyTimeSpent" value="8141000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -379,23 +379,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cuongtt/game101/Vector2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="85" column="20" lean-forward="true" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
-          <folding>
-            <element signature="e#244#245#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cuongtt/game101/KinematicSeek.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -418,10 +401,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cuongtt/game101/Vector2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding>
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#2751#2752#0" expanded="true" />
+            <element signature="e#2777#2778#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cuongtt/game101/Kinematic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="54" column="59" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
+        <state relative-caret-position="541">
+          <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
           <folding>
             <element signature="e#486#487#0" expanded="true" />
             <element signature="e#517#518#0" expanded="true" />
