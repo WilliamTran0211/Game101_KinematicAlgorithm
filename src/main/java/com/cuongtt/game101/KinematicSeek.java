@@ -5,5 +5,5 @@ public class KinematicSeek {
     private Kinematic target;
     private final double MAX_SPEED = 10;
 
-    
+
 }

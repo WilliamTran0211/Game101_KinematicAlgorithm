@@ -47,4 +47,12 @@ public class Kinematic {
     public void setRotaion(float rotaion) {
         this.rotaion = rotaion;
     }
+
+    public void update(KinematicOutput kinematicOutput, double time){
+       this.position = this.position.add(  this.velocity.mul(time).add( kinematicOutput.getLinear().mul( 0.5 * Math.pow(time, 2) ) ) );
+       this.orientation += this.rotaion * time + kinematicOutput.getAngular() * 0.5 * Math.pow(time, 2);
+       this.velocity = this.velocity.add(kinematicOutput.getLinear().mul(time));
+       this.rotaion += kinematicOutput.getAngular() * time;
+    }
+
 }

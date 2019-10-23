@@ -50,9 +50,11 @@ public class Vector2D {
         return result;
     }
 
-    public void add(Vector2D vectorB){
+    public Vector2D add(Vector2D vectorB){
         this.x += vectorB.getX();
         this.y += vectorB.getY();
+
+        return this;
     }
 
     public static Vector2D add(Vector2D vectorA, Vector2D vectorB){
@@ -63,9 +65,11 @@ public class Vector2D {
         return new Vector2D(tempX, tempY);
     }
 
-    public void sub(Vector2D vectorB){
+    public Vector2D sub(Vector2D vectorB){
         this.x -= vectorB.getX();
         this.y -= vectorB.getY();
+
+        return this;
     }
 
     public static Vector2D sub(Vector2D vectorA, Vector2D vectorB){
@@ -82,7 +86,7 @@ public class Vector2D {
         return this;
     }
 
-    public Vector2D mul(Vector2D oldVector, double cons){
+    public static Vector2D mul(Vector2D oldVector, double cons){
         Vector2D newVector = new Vector2D();
 
         newVector.setX(oldVector.getX()*cons);
