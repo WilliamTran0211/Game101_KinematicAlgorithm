@@ -96,6 +96,16 @@ public class Vector2D {
 
     }
 
+    public Vector2D div(double cons){
+        this.x /= cons;
+        this.y /= cons;
+        return this;
+    }
+
+    public static Vector2D div(Vector2D oldVector, double cons){
+        return new Vector2D(oldVector.getX()/cons, oldVector.getY()/cons);
+    }
+
     public static Vector2D asVector2D(double angle){
         return new Vector2D(Math.sin(angle), Math.cos(angle));
     }
@@ -113,7 +123,7 @@ public class Vector2D {
         return new Vector2D(v.getX() / lenghtSquared, v.getY() / lenghtSquared );
     }
 
-    public double lenght(){
+    public double length(){
         return Math.sqrt( Math.pow(this.x, 2) + Math.pow(this.y, 2));
     }
 }

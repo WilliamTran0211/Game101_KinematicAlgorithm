@@ -56,7 +56,7 @@ public class Kinematic {
     }
 
     public double getNewOrientation(double currentOrientation, Vector2D currentVelocity){
-        if(currentVelocity.lenght() > 0){
+        if(currentVelocity.length() > 0){
             return Math.atan2( - currentVelocity.getX(), currentVelocity.getY());
         }
         return currentOrientation;
