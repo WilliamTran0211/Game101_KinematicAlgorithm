@@ -33,5 +33,15 @@ public class KinematicSeek {
         return MAX_SPEED;
     }
 
+    public KinematicOutput getKinematicOutput(){
+        KinematicOutput kinematicOutput = new KinematicOutput();
+        kinematicOutput.setLinear(new Vector2D().sub(this.target.getPosition(), this.getCharater().getPosition()));
+        kinematicOutput.getLinear().normalize();
+        kinematicOutput.getLinear().mul(MAX_SPEED);
+        kinematicOutput.setAngular(0);
 
+        charater.setOrientation(charater.getNewOrientation(charater.getOrientation(), kinematicOutput.getLinear()));
+
+        return kinematicOutput;
+    }
 }
