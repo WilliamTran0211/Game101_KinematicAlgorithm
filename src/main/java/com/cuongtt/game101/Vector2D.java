@@ -55,7 +55,7 @@ public class Vector2D {
         this.y += vectorB.getY();
     }
 
-    public Vector2D add(Vector2D vectorA, Vector2D vectorB){
+    public static Vector2D add(Vector2D vectorA, Vector2D vectorB){
 
         double tempX = vectorA.getX() + vectorB.getX();
         double tempY = vectorA.getY() + vectorB.getY();
@@ -68,7 +68,7 @@ public class Vector2D {
         this.y -= vectorB.getY();
     }
 
-    public Vector2D sub(Vector2D vectorA, Vector2D vectorB){
+    public static Vector2D sub(Vector2D vectorA, Vector2D vectorB){
         double tempX = vectorA.getX() - vectorB.getX();
         double tempY = vectorA.getY() - vectorB.getY();
 
